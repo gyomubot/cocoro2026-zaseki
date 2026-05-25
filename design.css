@@ -1,0 +1,107 @@
+/*#f4f7fb 背景 　#6b8cae 緑 アクセントカラー　#3f4a56 文字*/
+
+body {
+  background-color: #f4f7fb;
+  color: #3f4a56;
+  
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  'Hiragino Maru Gothic ProN',
+  'メイリオ',
+  sans-serif;
+
+  padding:32px 24px;
+}
+
+h1{
+  font-size: 28px;
+  font-weight: 500;
+
+  margin-bottom: 40px;
+
+  color: #6b8cae;
+}
+
+.music-name a{
+  width: 100%;
+  line-height: 1.5;
+  display: block;
+  color: #3f4a56;
+  text-decoration: none;
+  padding: 20px 4px;
+  border-bottom: 1px solid #ddd8cf;
+  transition:0.3s;
+}
+
+.music-name a:hover{
+  color: #6b8cae;
+  padding-left: 12px;
+}
+
+.pagechange a {
+  text-decoration: none;
+  color: #6b8cae;
+  border: 1px solid #6b8cae;
+  padding: 10px 16px;
+  border-radius:20px;
+  transition: 0.3s;
+
+  display: block;
+  min-width: 140px;
+  text-align: center;
+}
+
+@media(max-width: 600px){
+  .pagechange {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vw * 9 / 16); /* 画面幅から高さを計算 */
+  aspect-ratio: 16 / 9;         /* スライドの縦横比を維持 */
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+details{
+  margin-bottom: 16px;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+  background-color: #6b8cae;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  user-select: none;
+  transition: 0.3s;
+  }
+
+summary:hover {
+  background-color: #7c9f8a;
+}
+
+details[open] summary{
+  background-color: #6f8f7c;
+}
+
+summary::-webkit-details-maker{
+  display:none;
+}
